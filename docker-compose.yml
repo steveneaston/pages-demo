@@ -1,0 +1,14 @@
+version: "3.5"
+
+services:
+  guides:
+    image: node:18
+    ports:
+      - 5173:5173
+    volumes:
+      - .:/usr/src/app
+    working_dir: /usr/src/app
+    network_mode: host
+    stdin_open: true
+    tty: true
+    command: npx vitepress dev docs
