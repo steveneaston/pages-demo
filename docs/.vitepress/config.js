@@ -81,6 +81,12 @@ export default withMermaid(
           dateStyle: 'medium',
           timeStyle: 'short'
         }
+      },
+
+      notFound: {
+        quote: '',
+        linkLabel: 'go to home', // Aria label
+        linkText: 'Back home'
       }
     },
     mermaid: {
