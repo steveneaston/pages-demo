@@ -7,7 +7,7 @@ export default withMermaid(
     lang: 'en-GB',
     title: 'Amiqus Developers',
     description: 'Integrate your service or app with Amiqus.',
-    cleanUrls: true,
+    // cleanUrls: true,
     themeConfig: {
       // https://vitepress.dev/reference/default-theme-config
       logo: 'https://developers.amiqus.co/assets/images/logos/amiqus-full.png',
@@ -19,18 +19,16 @@ export default withMermaid(
           detailedView: true
         }
       },
-
       nav: [
         {
           text: 'Amiqus API',
           items: [
-            { text: 'Reference', link: 'https://developers.amiqus.co/aqid/api-reference.html' },
+            { text: 'Reference', link: 'pathname:///aqid/api-reference.html' },
             { text: 'Guides', link: '/guides/getting-started' },
-            { text: 'Changelog', link: '/' },
+            { text: 'Changelog', link: '/aqid/changelog' },
           ]
         }
       ],
-
       sidebar: {
         '/guides/': [
           {
@@ -78,10 +76,10 @@ export default withMermaid(
       },
 
       lastUpdated: {
-        text: 'Updated at',
+        text: 'Last updated',
         formatOptions: {
-          dateStyle: 'full',
-          timeStyle: 'medium'
+          dateStyle: 'medium',
+          timeStyle: 'short'
         }
       }
     },

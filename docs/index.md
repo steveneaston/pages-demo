@@ -10,9 +10,9 @@ hero:
     - theme: brand
       text: Get Started
       link: /guides/getting-started
-#     - theme: alt
-#       text: API Examples
-#       link: /api-examples
+    - theme: alt
+      text: API Reference
+      link: pathname:///aqid/api-reference.html
 
 # features:
 #   - title: Feature A
